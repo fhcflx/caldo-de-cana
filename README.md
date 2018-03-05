@@ -6,7 +6,7 @@
 - R version: 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 - No RStudio
 - non-root user: somebody, UID = 1000
-- run:  ```docker run -it --rm fhcflx/caldo-de-cana```
+- run:  ```docker run -it -u somebody --rm fhcflx/caldo-de-cana```
 - example of prompt: ```somebody@<container id>:~$```
 - transfer databases and scripts to container (or output from it):
    ```docker cp /path/to/somebodys/file.rda <container id>:/home/somebody/```
