@@ -6,6 +6,6 @@ RUN apt-get update \
             dirmngr \
             tzdata
 RUN apt-get update \
-    && apt-get install -t unstable r-base r-base-dev -y --allow-unauthenticated
+    && apt-get install r-base r-base-dev -y --allow-unauthenticated
 WORKDIR /home/somebody
 CMD ["/bin/bash"]
