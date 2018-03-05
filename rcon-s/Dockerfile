@@ -11,5 +11,4 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD5
 RUN apt-get update \
     && apt-get install r-base r-base-dev -y --allow-unauthenticated
 WORKDIR /home/somebody
-USER [somebody]
 CMD ["/bin/bash"]

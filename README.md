@@ -1,6 +1,6 @@
-# Automated build of a safer R docker
-
 ## caldo-de-cana
+
+### Automated build of a safer R docker
 
 - OS: Ubuntu 16.04 Xenial
 - R version: 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
