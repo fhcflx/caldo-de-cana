@@ -1,8 +1,6 @@
 FROM ubuntu:xenial
-ENTRYPOINT ["/bin/sh" "-c" "/bin/bash"]
 MAINTAINER Francisco Felix <fhcflx@outlook.com>
-RUN adduser --home /home/somebody --shell /bin/bash somebody \
-    && chown somebody:somebody /home/somebody
+RUN groupadd -r somebody && useradd --no-log-init -r -g somebody somebody
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
             ca-certificates \
